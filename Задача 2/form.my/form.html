@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="form.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+
+    <body>
+        <form action="script.php" method="post" class="block">
+            <p>Укажите ваши данные:</p>
+            <p>ФИО </p> <input type="text" name="fio" size="40" required >
+            <p>Адрес </p> <input type="text" name="address">
+            <p>Email </p> <input type="text" name="email">
+            <p>Моб. телефон </p> <input type="text" name="phone_number" required>
+            <p>Файл </p> <input type="file" name="file"></p>            
+            <p>Ваш комментарий:</p>
+            <textarea name="comment"></textarea>
+            <p> <input type="submit" method="post" value="Отправить"></p>
+        </form>
+    </body>
+</html>
